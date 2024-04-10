@@ -10,21 +10,21 @@ This is the repository for Saviynt External Connector Framework Open API Spec
 5.	This will generate a zip file.
 
 ## Steps to start node-js server.
-1.	Install nodejs from https://nodejs.org/en/download.
-2.	Unzip the generated zip file. (This will be base location of your node js project)
-3.	Go to base location and run “npm start” command.
-4.      You should be able to see below message. <br />
-        Your server is listening on port 8080 (http://localhost:8080) <br />
-        Swagger-ui is available on http://localhost:8080/docs
+1. Install nodejs from https://nodejs.org/en/download.
+2. Unzip the generated zip file. (This will be base location of your node js project)
+3. Go to base location and run “npm start” command.
+4. You should be able to see below message.
+
+   Your server is listening on port 8080 (http://localhost:8080).
+   Swagger-ui is available on http://localhost:8080/docs.
     
-        This will mean you have successfully started the node-js server.
+   This will mean you have successfully started the node-js server.
 
 ## Steps to navigate the API spec.
-1.      Go to web browser and navigate to http://localhost:8080/docs.
-2.      This will list all API spec supported by External Connector Framework.
-3.      There are various operations listed, as per your requirement, you can go to that specific API and use "Try it out" option to explore the 
+1. Go to web browser and navigate to http://localhost:8080/docs.
+2. This will list all API spec supported by External Connector Framework.
+3. There are various operations listed, as per your requirement, you can go to that specific API and use "Try it out" option to explore the 
         API specification, which will list request type, request parameters, body and response.
-
 Note:
 1. "Try it out" will require you to authorize with a bearer token, so you should first click on Authorize button at the top provide a value, this is a sample spec and there is no actual token validation, so you can provide any string value for e.g. MyBearerToken and click on Authorize -> Close.
    
