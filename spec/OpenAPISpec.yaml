@@ -582,12 +582,6 @@ components:
                   type: string
                 COUNTRY:
                   type: string
-                CREATEDBY:
-                  type: string
-                CREATEDATE:
-                  type: string
-                CUSTOMER:
-                  type: string
                 CUSTOMPROPERTY1:
                   type: string
                 CUSTOMPROPERTY2:
@@ -730,17 +724,15 @@ components:
                   type: string
                 EMPLOYEEID:
                   type: string
-                ENDDATE:
+                EMPLOYEECLASS:
                   type: string
-                ENTITY:
+                ENDDATE:
                   type: string
                 FIRSTNAME:
                   type: string
                 JOBCODE:
                   type: string
                 JOBDESCRIPTION:
-                  type: string
-                JOB_ID:
                   type: string
                 JOB_FUNCTION:
                   type: string
@@ -772,8 +764,6 @@ components:
                   type: string
                 REGIONCODE:
                   type: string
-                RISKSCORE:
-                  type: string
                 SECONDARYEMAIL:
                   type: string
                 SECONDARYMANAGER:
@@ -790,19 +780,13 @@ components:
                   type: string
                 STREET:
                   type: string
-                SYSTEMUSERNAME:
-                  type: string
                 TERMDATE:
                   type: string
                 TITLE:
                   type: string
                 UPDATEDATE:
                   type: string
-                UPDATEUSER:
-                  type: string
                 USERNAME:
-                  type: string
-                VENDORMANAGER:
                   type: string
             example:
               - ACCOUNTEXPIRED: "0"
@@ -812,9 +796,6 @@ components:
                 COMPANYNAME: "Global Modern Services, Inc. (USA)"
                 COSTCENTER: "40000 Office of CHRO"
                 COUNTRY: "United States of America"
-                CREATEDBY: "NULL"
-                CREATEDATE: "3/10/23"
-                CUSTOMER: "NULL"
                 CUSTOMPROPERTY1: "3aa5550b7fe348b98d7b5741afc65534"
                 CUSTOMPROPERTY10: "NULL"
                 CUSTOMPROPERTY11: "NULL"
@@ -888,11 +869,9 @@ components:
                 EMPLOYEECLASS: "NULL"
                 EMPLOYEEID: "21001"
                 ENDDATE: "NULL"
-                ENTITY: "NULL"
                 FIRSTNAME: "Neil"
                 JOBCODE: "NULL"
                 JOBDESCRIPTION: "NULL"
-                JOB_ID: "43098"
                 JOB_FUNCTION: "NULL"
                 JOBCODEDESC: "NULL"
                 LASTNAME: "Sharma"
@@ -908,7 +887,6 @@ components:
                 PREFEREDFIRSTNAME: "Neil"
                 REGION: "NULL"
                 REGIONCODE: "NULL"
-                RISKSCORE: "NULL"
                 SECONDARYEMAIL: "NULL"
                 SECONDARYMANAGER: "NULL"
                 SECONDARYPHONE: "NULL"
@@ -917,13 +895,10 @@ components:
                 STATE: "NULL"
                 STATUSKEY: "1"
                 STREET: "NULL"
-                SYSTEMUSERNAME: "nsharma"
                 TERMDATE: "NULL"
                 TITLE: "Chief Human Resources Officer"
                 UPDATEDATE: "20-03-2024 12:18"
-                UPDATEUSER: "1"
                 USERNAME: "nsharma"
-                VENDORMANAGER: "NULL"
               - ACCOUNTEXPIRED: "0"
                 ACCOUNTLOCKED: "0"
                 CITY: "San Francisco"
@@ -931,9 +906,6 @@ components:
                 COMPANYNAME: "Global Modern Services, Inc. (USA)"
                 COSTCENTER: "10000 Office of CEO"
                 COUNTRY: "United States of America"
-                CREATEDBY: "NULL"
-                CREATEDATE: "3/10/23"
-                CUSTOMER: "NULL"
                 CUSTOMPROPERTY1: "0e44c92412d34b01ace61e80a47aaf6d"
                 CUSTOMPROPERTY10: "NULL"
                 CUSTOMPROPERTY11: "NULL"
@@ -1007,11 +979,9 @@ components:
                 EMPLOYEECLASS: "NULL"
                 EMPLOYEEID: "21002"
                 ENDDATE: "NULL"
-                ENTITY: "NULL"
                 FIRSTNAME: "Morgan"
                 JOBCODE: "NULL"
                 JOBDESCRIPTION: "NULL"
-                JOB_ID: "43098"
                 JOB_FUNCTION: "NULL"
                 JOBCODEDESC: "NULL"
                 LASTNAME: "Choudhary"
@@ -1027,7 +997,6 @@ components:
                 PREFEREDFIRSTNAME: "Morgan"
                 REGION: "NULL"
                 REGIONCODE: "NULL"
-                RISKSCORE: "NULL"
                 SECONDARYEMAIL: "NULL"
                 SECONDARYMANAGER: "NULL"
                 SECONDARYPHONE: "NULL"
@@ -1036,11 +1005,8 @@ components:
                 STATE: "NULL"
                 STATUSKEY: "1"
                 STREET: "NULL"
-                SYSTEMUSERNAME: "mchoudhary"
                 TERMDATE: "NULL"
                 TITLE: "Chief Executive Officer"
-                UPDATEDATE: "3/10/23"
-                UPDATEUSER: "1"
                 USERNAME: "mchoudhary"
                 VENDORMANAGER: "NULL"
               - ACCOUNTEXPIRED: "0"
@@ -1050,9 +1016,6 @@ components:
                 COMPANYNAME: "Global Modern Services, Inc. (USA)"
                 COSTCENTER: "60000 Office of CIO"
                 COUNTRY: "United States of America"
-                CREATEDBY: "NULL"
-                CREATEDATE: "3/10/23"
-                CUSTOMER: "NULL"
                 CUSTOMPROPERTY1: "3895af7993ff4c509cbea2e1817172e0"
                 CUSTOMPROPERTY10: "NULL"
                 CUSTOMPROPERTY11: "NULL"
@@ -1126,11 +1089,9 @@ components:
                 EMPLOYEECLASS: "NULL"
                 EMPLOYEEID: "21003"
                 ENDDATE: "NULL"
-                ENTITY: "NULL"
                 FIRSTNAME: "Oliver"
                 JOBCODE: "NULL"
                 JOBDESCRIPTION: "NULL"
-                JOB_ID: "43098"
                 JOB_FUNCTION: "NULL"
                 JOBCODEDESC: "NULL"
                 LASTNAME: "Nehra"
@@ -1155,13 +1116,9 @@ components:
                 STATE: "NULL"
                 STATUSKEY: "1"
                 STREET: "NULL"
-                SYSTEMUSERNAME: "onehra"
                 TERMDATE: "NULL"
                 TITLE: "Chief Information Officer"
-                UPDATEDATE: "3/10/23"
-                UPDATEUSER: "1"
                 USERNAME: "onehra"
-                VENDORMANAGER: "NULL"
     accounts:
       type: object
       properties:
@@ -1185,13 +1142,7 @@ components:
                   type: string
                 ACCOUNTTYPE:
                   type: string
-                APPLICENSETYPE:
-                  type: string
                 COMMENTS:
-                  type: string
-                CREATED_ON:
-                  type: string
-                CREATOR:
                   type: string
                 CUSTOMPROPERTY1:
                   type: string
@@ -1317,12 +1268,8 @@ components:
                   type: string
                 DISPLAYNAME:
                   type: string
-                ENDPOINTKEY:
-                  type: integer
                 INCORRECTLOGONS:
                   type: string
-                JOBID:
-                  type: integer
                 LASTLOGONDATE:
                   type: string
                 LASTPASSWORDCHANGE:
@@ -1331,37 +1278,13 @@ components:
                   type: string
                 NAME:
                   type: string
-                ORPHAN:
-                  type: integer
                 PASSWORDCHANGESTATUS:
                   type: string
                 PASSWORDLOCKDATE:
                   type: string
-                PRIVILEGED:
-                  type: string
-                REFERENCED_ACCOUNTNAME:
-                  type: string
-                REFERENCED_ACCOUNTKEY:
-                  type: string
-                SAVIYNT_CONNECT_JOBID:
-                  type: string
-                SAVIYNT_CONNECT_UPDATEDATE:
-                  type: string
-                SAVLICENSETYPE:
-                  type: string
                 STATUS:
                   type: integer
-                SYSTEMID:
-                  type: integer
-                TOTALUSAGE:
-                  type: string
-                UPDATEUSER:
-                  type: string
                 UPDATEDATE:
-                  type: string
-                USERGROUP:
-                  type: string
-                USERLOCK:
                   type: string
                 VALIDFROM:
                   type: string
@@ -1373,11 +1296,8 @@ components:
             - ACCOUNTID: "15553759289491"
               ACCOUNTCLASS: "NULL"
               ACCOUNTTYPE: "NULL"
-              APPLICENSETYPE: "NULL"
               COMMENTS: "NULL"
-              CREATED_ON: "NULL"
-              CREATOR: "NULL"
-              CUSTOMPROPERTY1: "Antonio Sharma"
+              CUSTOMPROPERTY1: "Neil Sharma"
               CUSTOMPROPERTY10: "NULL"
               CUSTOMPROPERTY11: "NULL"
               CUSTOMPROPERTY12: "NULL"
@@ -1410,7 +1330,7 @@ components:
               CUSTOMPROPERTY37: "NULL"
               CUSTOMPROPERTY38: "NULL"
               CUSTOMPROPERTY39: "NULL"
-              CUSTOMPROPERTY4: "O21200@example.net"
+              CUSTOMPROPERTY4: "nsharma@example.net"
               CUSTOMPROPERTY40: "NULL"
               CUSTOMPROPERTY41: "NULL"
               CUSTOMPROPERTY42: "NULL"
@@ -1421,7 +1341,7 @@ components:
               CUSTOMPROPERTY47: "NULL"
               CUSTOMPROPERTY48: "NULL"
               CUSTOMPROPERTY49: "NULL"
-              CUSTOMPROPERTY5: "Antonio"
+              CUSTOMPROPERTY5: "Neil"
               CUSTOMPROPERTY50: "NULL"
               CUSTOMPROPERTY51: "NULL"
               CUSTOMPROPERTY52: "NULL"
@@ -1439,45 +1359,28 @@ components:
               CUSTOMPROPERTY9: "NULL"
               DESCRIPTION: "NULL"
               DISPLAYNAME: "NULL"
-              ENDPOINTKEY: 1750
               INCORRECTLOGONS: "NULL"
-              JOBID: 40873
               LASTLOGONDATE: "NULL"
               LASTPASSWORDCHANGE: "NULL"
               LOCKEDSTATE: "NULL"
-              NAME: "asharma"
-              ORPHAN: 0
+              NAME: "nsharma"
               PASSWORDCHANGESTATUS: "NULL"
               PASSWORDLOCKDATE: "NULL"
-              PRIVILEGED: "NULL"
-              REFERENCED_ACCOUNTNAME: "NULL"
-              REFERENCED_ACCOUNTKEY: "NULL"
-              SAVIYNT_CONNECT_JOBID: "NULL"
-              SAVIYNT_CONNECT_UPDATEDATE: "NULL"
-              SAVLICENSETYPE: "NULL"
               STATUS: 1
-              SYSTEMID: 1798
-              TOTALUSAGE: "NULL"
-              UPDATEUSER: "NULL"
               UPDATEDATE: "NULL"
-              USERGROUP: "NULL"
-              USERLOCK: "NULL"
               VALIDFROM: "NULL"
               VALIDTHROUGH: "NULL"
               TARGETLASTPASSWORDCHANGE: "NULL"
             - ACCOUNTID: "15553759289492"
               ACCOUNTCLASS: "NULL"
               ACCOUNTTYPE: "NULL"
-              APPLICENSETYPE: "NULL"
               COMMENTS: "NULL"
-              CREATED_ON: "NULL"
-              CREATOR: "NULL"
-              CUSTOMPROPERTY1: "Mr Amit Doe"
+              CUSTOMPROPERTY1: "Morgan Choudhary"
               CUSTOMPROPERTY2: "NULL"
               CUSTOMPROPERTY3: "NULL"
-              CUSTOMPROPERTY4: "adoe@example.net"
-              CUSTOMPROPERTY5: "Amit"
-              CUSTOMPROPERTY6: "Doe"
+              CUSTOMPROPERTY4: "mchoudhary@example.net"
+              CUSTOMPROPERTY5: "Morgan"
+              CUSTOMPROPERTY6: "Choudhary"
               CUSTOMPROPERTY7: "NULL"
               CUSTOMPROPERTY8: "NULL"
               CUSTOMPROPERTY9: "NULL"
@@ -1534,39 +1437,22 @@ components:
               CUSTOMPROPERTY60: "NULL"
               DESCRIPTION: "NULL"
               DISPLAYNAME: "NULL"
-              ENDPOINTKEY: 1750
               INCORRECTLOGONS: "NULL"
-              JOBID: 40873
               LASTLOGONDATE: "NULL"
               LASTPASSWORDCHANGE: "NULL"
               LOCKEDSTATE: "NULL"
-              NAME: "adoe"
-              ORPHAN: 0
+              NAME: "mchoudhary"
               PASSWORDCHANGESTATUS: "NULL"
               PASSWORDLOCKDATE: "NULL"
-              PRIVILEGED: "NULL"
-              REFERENCED_ACCOUNTNAME: "NULL"
-              REFERENCED_ACCOUNTKEY: "NULL"
-              SAVIYNT_CONNECT_JOBID: "NULL"
-              SAVIYNT_CONNECT_UPDATEDATE: "NULL"
-              SAVLICENSETYPE: "NULL"
               STATUS: 1
-              SYSTEMID: 1798
-              TOTALUSAGE: "NULL"
-              UPDATEUSER: "NULL"
               UPDATEDATE: "NULL"
-              USERGROUP: "NULL"
-              USERLOCK: "NULL"
               VALIDFROM: "NULL"
               VALIDTHROUGH: "NULL"
               TARGETLASTPASSWORDCHANGE: "NULL"
             - ACCOUNTID: "15553759289493"
               ACCOUNTCLASS: "NULL"
               ACCOUNTTYPE: "NULL"
-              APPLICENSETYPE: "NULL"
               COMMENTS: "NULL"
-              CREATED_ON: "NULL"
-              CREATOR: "NULL"
               CUSTOMPROPERTY1: "Logan Prasad"
               CUSTOMPROPERTY2: "NULL"
               CUSTOMPROPERTY3: "NULL"
@@ -1629,29 +1515,15 @@ components:
               CUSTOMPROPERTY60: "NULL"
               DESCRIPTION: "NULL"
               DISPLAYNAME: "NULL"
-              ENDPOINTKEY: 1750
               INCORRECTLOGONS: "NULL"
-              JOBID: 40873
               LASTLOGONDATE: "NULL"
               LASTPASSWORDCHANGE: "NULL"
               LOCKEDSTATE: "NULL"
               NAME: "lprasad"
-              ORPHAN: 0
               PASSWORDCHANGESTATUS: "NULL"
               PASSWORDLOCKDATE: "NULL"
-              PRIVILEGED: "NULL"
-              REFERENCED_ACCOUNTNAME: "NULL"
-              REFERENCED_ACCOUNTKEY: "NULL"
-              SAVIYNT_CONNECT_JOBID: "NULL"
-              SAVIYNT_CONNECT_UPDATEDATE: "NULL"
-              SAVLICENSETYPE: "NULL"
               STATUS: 1
-              SYSTEMID: 1798
-              TOTALUSAGE: "NULL"
-              UPDATEUSER: "NULL"
               UPDATEDATE: "NULL"
-              USERGROUP: "NULL"
-              USERLOCK: "NULL"
               VALIDFROM: "NULL"
               VALIDTHROUGH: "NULL"
               TARGETLASTPASSWORDCHANGE: "NULL"
@@ -1670,17 +1542,15 @@ components:
                   type: integer
                 entitlement_value:
                   type: string
-                entitlementTypeName:
-                  type: string
                 description:
                   type: string
                 displayname:
                   type: string
                 entitlement_glossary:
                   type: string
-                syscritical:
+                status:
                   type: string
-                soxcritical:
+                entclass:
                   type: string
                 CUSTOMPROPERTY1:
                   type: string
@@ -1764,46 +1634,6 @@ components:
                   type: string
                 CUSTOMPROPERTY40:
                   type: string
-                CUSTOMPROPERTY41:
-                  type: string
-                CUSTOMPROPERTY42:
-                  type: string
-                CUSTOMPROPERTY43:
-                  type: string
-                CUSTOMPROPERTY44:
-                  type: string
-                CUSTOMPROPERTY45:
-                  type: string
-                CUSTOMPROPERTY46:
-                  type: string
-                CUSTOMPROPERTY47:
-                  type: string
-                CUSTOMPROPERTY48:
-                  type: string
-                CUSTOMPROPERTY49:
-                  type: string
-                CUSTOMPROPERTY50:
-                  type: string
-                CUSTOMPROPERTY51:
-                  type: string
-                CUSTOMPROPERTY52:
-                  type: string
-                CUSTOMPROPERTY53:
-                  type: string
-                CUSTOMPROPERTY54:
-                  type: string
-                CUSTOMPROPERTY55:
-                  type: string
-                CUSTOMPROPERTY56:
-                  type: string
-                CUSTOMPROPERTY57:
-                  type: string
-                CUSTOMPROPERTY58:
-                  type: string
-                CUSTOMPROPERTY59:
-                  type: string
-                CUSTOMPROPERTY60:
-                  type: string  
                 childEntitlements:
                   type: object
                   properties:
@@ -1821,13 +1651,20 @@ components:
             example:
             - entitlementID: 15553692240529
               entitlement_value: Light agent
-              entitlementTypeName: Role
               description: Can view and add private comments to tickets
               displayname: "Light agent"
               entitlement_glossary: "Light agent"
-              syscritical: "0"
-              soxcritical: "0"
+              status: "0"
+              entclass: "Role"
               customproperty1: "NULL"
+              customproperty2: "2023-05-24t06:34:23.000z"
+              customproperty3: "2023-05-24t06:34:23.000z"
+              customproperty4: "NULL"
+              customproperty5: "NULL"
+              customproperty6: "NULL"
+              customproperty7: "NULL"
+              customproperty8: "NULL"
+              customproperty9: "NULL"
               customproperty10: "NULL"
               customproperty11: "NULL"
               customproperty12: "NULL"
@@ -1838,7 +1675,6 @@ components:
               customproperty17: "NULL"
               customproperty18: "NULL"
               customproperty19: "NULL"
-              customproperty2: "2023-05-24t06:34:23.000z"
               customproperty20: "NULL"
               customproperty21: "NULL"
               customproperty22: "NULL"
@@ -1849,7 +1685,6 @@ components:
               customproperty27: "NULL"
               customproperty28: "NULL"
               customproperty29: "NULL"
-              customproperty3: "2023-05-24t06:34:23.000z"
               customproperty30: "NULL"
               customproperty31: "NULL"
               customproperty32: "NULL"
@@ -1860,38 +1695,7 @@ components:
               customproperty37: "NULL"
               customproperty38: "NULL"
               customproperty39: "NULL"
-              customproperty4: "NULL"
               customproperty40: "NULL"
-              customproperty41: "NULL"
-              customproperty42: "NULL"
-              customproperty43: "NULL"
-              customproperty44: "NULL"
-              customproperty45: "NULL"
-              customproperty46: "NULL"
-              customproperty47: "NULL"
-              customproperty48: "NULL"
-              customproperty49: "NULL"
-              customproperty5: "NULL"
-              customproperty50: "NULL"
-              customproperty51: "NULL"
-              customproperty52: "NULL"
-              customproperty53: "NULL"
-              customproperty54: "NULL"
-              customproperty55: "NULL"
-              customproperty56: "NULL"
-              customproperty57: "NULL"
-              customproperty58: "NULL"
-              customproperty59: "NULL"
-              customproperty6: "NULL"
-              customproperty60: "NULL"
-              customproperty61: "NULL"
-              customproperty62: "NULL"
-              customproperty63: "NULL"
-              customproperty64: "NULL"
-              customproperty65: "NULL"
-              customproperty7: "NULL"
-              customproperty8: "NULL"
-              customproperty9: "NULL"
               childEntitlements:
                 roles:
                   - entitlementID: 15553670302865
@@ -1900,13 +1704,20 @@ components:
                 - "15553759289491"
             - entitlementID: 15553670302865
               entitlement_value: "Contributor"
-              entitlementTypeName: "Role"
               description: "Can provide limited support"
               displayname: "Contributor"
               entitlement_glossary: "Contributor"
-              syscritical: "0"
-              soxcritical: "0"
+              status: "1"
+              entclass: "Role"
               customproperty1: "NULL"
+              customproperty2: "2023-05-24t06:34:23.000z"
+              customproperty3: "2023-05-24t06:34:23.000z"
+              customproperty4: "NULL"
+              customproperty5: "NULL"
+              customproperty6: "NULL"
+              customproperty7: "NULL"
+              customproperty8: "NULL"
+              customproperty9: "NULL"
               customproperty10: "NULL"
               customproperty11: "NULL"
               customproperty12: "NULL"
@@ -1917,7 +1728,6 @@ components:
               customproperty17: "NULL"
               customproperty18: "NULL"
               customproperty19: "NULL"
-              customproperty2: "2023-05-24t06:34:23.000z"
               customproperty20: "NULL"
               customproperty21: "NULL"
               customproperty22: "NULL"
@@ -1928,7 +1738,6 @@ components:
               customproperty27: "NULL"
               customproperty28: "NULL"
               customproperty29: "NULL"
-              customproperty3: "2023-05-24t06:34:23.000z"
               customproperty30: "NULL"
               customproperty31: "NULL"
               customproperty32: "NULL"
@@ -1939,49 +1748,25 @@ components:
               customproperty37: "NULL"
               customproperty38: "NULL"
               customproperty39: "NULL"
-              customproperty4: "NULL"
               customproperty40: "NULL"
-              customproperty41: "NULL"
-              customproperty42: "NULL"
-              customproperty43: "NULL"
-              customproperty44: "NULL"
-              customproperty45: "NULL"
-              customproperty46: "NULL"
-              customproperty47: "NULL"
-              customproperty48: "NULL"
-              customproperty49: "NULL"
-              customproperty5: "NULL"
-              customproperty50: "NULL"
-              customproperty51: "NULL"
-              customproperty52: "NULL"
-              customproperty53: "NULL"
-              customproperty54: "NULL"
-              customproperty55: "NULL"
-              customproperty56: "NULL"
-              customproperty57: "NULL"
-              customproperty58: "NULL"
-              customproperty59: "NULL"
-              customproperty6: "NULL"
-              customproperty60: "NULL"
-              customproperty61: "NULL"
-              customproperty62: "NULL"
-              customproperty63: "NULL"
-              customproperty64: "NULL"
-              customproperty65: "NULL"
-              customproperty7: "NULL"
-              customproperty8: "NULL"
-              customproperty9: "NULL"
               owners:
                 - "15553759289491"
             - entitlementID: 15553670340241
               entitlement_value: Billing admin
-              entitlementTypeName: Role
               description: Can manage all settings, including billing.
               displayname: "Billing admin"
               entitlement_glossary: "Billing admin"
-              syscritical: "0"
-              soxcritical: "0"
+              status: "0"
+              entclass: "Role"
               customproperty1: "NULL"
+              customproperty2: "2023-05-24t06:34:23.000z"
+              customproperty3: "2023-05-24t06:34:23.000z"
+              customproperty4: "NULL"
+              customproperty5: "NULL"
+              customproperty6: "NULL"
+              customproperty7: "NULL"
+              customproperty8: "NULL"
+              customproperty9: "NULL"
               customproperty10: "NULL"
               customproperty11: "NULL"
               customproperty12: "NULL"
@@ -1992,7 +1777,6 @@ components:
               customproperty17: "NULL"
               customproperty18: "NULL"
               customproperty19: "NULL"
-              customproperty2: "2023-05-24t06:34:23.000z"
               customproperty20: "NULL"
               customproperty21: "NULL"
               customproperty22: "NULL"
@@ -2003,7 +1787,6 @@ components:
               customproperty27: "NULL"
               customproperty28: "NULL"
               customproperty29: "NULL"
-              customproperty3: "2023-05-24t06:34:23.000z"
               customproperty30: "NULL"
               customproperty31: "NULL"
               customproperty32: "NULL"
@@ -2014,49 +1797,25 @@ components:
               customproperty37: "NULL"
               customproperty38: "NULL"
               customproperty39: "NULL"
-              customproperty4: "NULL"
               customproperty40: "NULL"
-              customproperty41: "NULL"
-              customproperty42: "NULL"
-              customproperty43: "NULL"
-              customproperty44: "NULL"
-              customproperty45: "NULL"
-              customproperty46: "NULL"
-              customproperty47: "NULL"
-              customproperty48: "NULL"
-              customproperty49: "NULL"
-              customproperty5: "NULL"
-              customproperty50: "NULL"
-              customproperty51: "NULL"
-              customproperty52: "NULL"
-              customproperty53: "NULL"
-              customproperty54: "NULL"
-              customproperty55: "NULL"
-              customproperty56: "NULL"
-              customproperty57: "NULL"
-              customproperty58: "NULL"
-              customproperty59: "NULL"
-              customproperty6: "NULL"
-              customproperty60: "NULL"
-              customproperty61: "NULL"
-              customproperty62: "NULL"
-              customproperty63: "NULL"
-              customproperty64: "NULL"
-              customproperty65: "NULL"
-              customproperty7: "NULL"
-              customproperty8: "NULL"
-              customproperty9: "NULL"
               owners:
                 - "15553759289492"
             - entitlementID: 15553707898001
               entitlement_value: Admin
-              entitlementTypeName: Role
               description: Can manage all settings, except billing
               displayname: "Admin"
               entitlement_glossary: "Admin"
-              syscritical: "0"
-              soxcritical: "0"
+              status: "1"
+              entclass: "Role"
               customproperty1: "NULL"
+              customproperty2: "2023-05-24t06:34:23.000z"
+              customproperty3: "2023-05-24t06:34:23.000z"
+              customproperty4: "NULL"
+              customproperty5: "NULL"
+              customproperty6: "NULL"
+              customproperty7: "NULL"
+              customproperty8: "NULL"
+              customproperty9: "NULL"
               customproperty10: "NULL"
               customproperty11: "NULL"
               customproperty12: "NULL"
@@ -2067,7 +1826,6 @@ components:
               customproperty17: "NULL"
               customproperty18: "NULL"
               customproperty19: "NULL"
-              customproperty2: "2023-05-24t06:34:23.000z"
               customproperty20: "NULL"
               customproperty21: "NULL"
               customproperty22: "NULL"
@@ -2078,7 +1836,6 @@ components:
               customproperty27: "NULL"
               customproperty28: "NULL"
               customproperty29: "NULL"
-              customproperty3: "2023-05-24t06:34:23.000z"
               customproperty30: "NULL"
               customproperty31: "NULL"
               customproperty32: "NULL"
@@ -2089,38 +1846,7 @@ components:
               customproperty37: "NULL"
               customproperty38: "NULL"
               customproperty39: "NULL"
-              customproperty4: "NULL"
               customproperty40: "NULL"
-              customproperty41: "NULL"
-              customproperty42: "NULL"
-              customproperty43: "NULL"
-              customproperty44: "NULL"
-              customproperty45: "NULL"
-              customproperty46: "NULL"
-              customproperty47: "NULL"
-              customproperty48: "NULL"
-              customproperty49: "NULL"
-              customproperty5: "NULL"
-              customproperty50: "NULL"
-              customproperty51: "NULL"
-              customproperty52: "NULL"
-              customproperty53: "NULL"
-              customproperty54: "NULL"
-              customproperty55: "NULL"
-              customproperty56: "NULL"
-              customproperty57: "NULL"
-              customproperty58: "NULL"
-              customproperty59: "NULL"
-              customproperty6: "NULL"
-              customproperty60: "NULL"
-              customproperty61: "NULL"
-              customproperty62: "NULL"
-              customproperty63: "NULL"
-              customproperty64: "NULL"
-              customproperty65: "NULL"
-              customproperty7: "NULL"
-              customproperty8: "NULL"
-              customproperty9: "NULL"
               childEntitlements:
                 roles:
                   - entitlementID: 15553692240529
@@ -2133,7 +1859,7 @@ components:
           count:
             type: integer
             example: 3
-          roles:
+          groups:
             type: array
             items:
               type: object
@@ -2142,17 +1868,15 @@ components:
                   type: integer
                 entitlement_value:
                   type: string
-                entitlementTypeName:
-                  type: string
                 description:
                   type: string
                 displayname:
                   type: string
                 entitlement_glossary:
                   type: string
-                syscritical:
+                status:
                   type: string
-                soxcritical:
+                entclass:
                   type: string
                 CUSTOMPROPERTY1:
                   type: string
@@ -2236,46 +1960,6 @@ components:
                   type: string
                 CUSTOMPROPERTY40:
                   type: string
-                CUSTOMPROPERTY41:
-                  type: string
-                CUSTOMPROPERTY42:
-                  type: string
-                CUSTOMPROPERTY43:
-                  type: string
-                CUSTOMPROPERTY44:
-                  type: string
-                CUSTOMPROPERTY45:
-                  type: string
-                CUSTOMPROPERTY46:
-                  type: string
-                CUSTOMPROPERTY47:
-                  type: string
-                CUSTOMPROPERTY48:
-                  type: string
-                CUSTOMPROPERTY49:
-                  type: string
-                CUSTOMPROPERTY50:
-                  type: string
-                CUSTOMPROPERTY51:
-                  type: string
-                CUSTOMPROPERTY52:
-                  type: string
-                CUSTOMPROPERTY53:
-                  type: string
-                CUSTOMPROPERTY54:
-                  type: string
-                CUSTOMPROPERTY55:
-                  type: string
-                CUSTOMPROPERTY56:
-                  type: string
-                CUSTOMPROPERTY57:
-                  type: string
-                CUSTOMPROPERTY58:
-                  type: string
-                CUSTOMPROPERTY59:
-                  type: string
-                CUSTOMPROPERTY60:
-                  type: string  
                 childEntitlements:
                   type: object
                   properties:
@@ -2293,13 +1977,20 @@ components:
             example:
             - entitlementID: 15553798176145
               entitlement_value: Admin Users
-              entitlementTypeName: Group
               description: "NULL"
               displayname: "Admin Users"
               entitlement_glossary: "NULL"
-              syscritical: "0"
-              soxcritical: "0"
+              status: "1"
+              entclass: "Group"
               customproperty1: "NULL"
+              customproperty2: "2023-05-24t06:34:23.000z"
+              customproperty3: "2023-05-24t06:34:23.000z"
+              customproperty4: "NULL"
+              customproperty5: "NULL"
+              customproperty6: "NULL"
+              customproperty7: "NULL"
+              customproperty8: "NULL"
+              customproperty9: "NULL"
               customproperty10: "NULL"
               customproperty11: "NULL"
               customproperty12: "NULL"
@@ -2310,7 +2001,6 @@ components:
               customproperty17: "NULL"
               customproperty18: "NULL"
               customproperty19: "NULL"
-              customproperty2: "2023-05-24t06:34:23.000z"
               customproperty20: "NULL"
               customproperty21: "NULL"
               customproperty22: "NULL"
@@ -2321,7 +2011,6 @@ components:
               customproperty27: "NULL"
               customproperty28: "NULL"
               customproperty29: "NULL"
-              customproperty3: "2023-05-24t06:34:23.000z"
               customproperty30: "NULL"
               customproperty31: "NULL"
               customproperty32: "NULL"
@@ -2332,38 +2021,7 @@ components:
               customproperty37: "NULL"
               customproperty38: "NULL"
               customproperty39: "NULL"
-              customproperty4: "NULL"
               customproperty40: "NULL"
-              customproperty41: "NULL"
-              customproperty42: "NULL"
-              customproperty43: "NULL"
-              customproperty44: "NULL"
-              customproperty45: "NULL"
-              customproperty46: "NULL"
-              customproperty47: "NULL"
-              customproperty48: "NULL"
-              customproperty49: "NULL"
-              customproperty5: "NULL"
-              customproperty50: "NULL"
-              customproperty51: "NULL"
-              customproperty52: "NULL"
-              customproperty53: "NULL"
-              customproperty54: "NULL"
-              customproperty55: "NULL"
-              customproperty56: "NULL"
-              customproperty57: "NULL"
-              customproperty58: "NULL"
-              customproperty59: "NULL"
-              customproperty6: "NULL"
-              customproperty60: "NULL"
-              customproperty61: "NULL"
-              customproperty62: "NULL"
-              customproperty63: "NULL"
-              customproperty64: "NULL"
-              customproperty65: "NULL"
-              customproperty7: "NULL"
-              customproperty8: "NULL"
-              customproperty9: "NULL"
               owners:
                 - "15553759289491"
               childEntitlements:
@@ -2372,13 +2030,20 @@ components:
                   - entitlementID: 15553720929041
             - entitlementID: 15553769734673
               entitlement_value: "End Users"
-              entitlementTypeName: "Group"
               description: "NULL"
               displayname: "End Users"
               entitlement_glossary: "End Users"
-              syscritical: "0"
-              soxcritical: "0"
+              status: "0"
+              entclass: "Group"
               customproperty1: "NULL"
+              customproperty2: "2023-05-24t06:34:23.000z"
+              customproperty3: "2023-05-24t06:34:23.000z"
+              customproperty4: "NULL"
+              customproperty5: "NULL"
+              customproperty6: "NULL"
+              customproperty7: "NULL"
+              customproperty8: "NULL"
+              customproperty9: "NULL"
               customproperty10: "NULL"
               customproperty11: "NULL"
               customproperty12: "NULL"
@@ -2389,7 +2054,6 @@ components:
               customproperty17: "NULL"
               customproperty18: "NULL"
               customproperty19: "NULL"
-              customproperty2: "2023-05-24t06:34:23.000z"
               customproperty20: "NULL"
               customproperty21: "NULL"
               customproperty22: "NULL"
@@ -2400,7 +2064,6 @@ components:
               customproperty27: "NULL"
               customproperty28: "NULL"
               customproperty29: "NULL"
-              customproperty3: "2023-05-24t06:34:23.000z"
               customproperty30: "NULL"
               customproperty31: "NULL"
               customproperty32: "NULL"
@@ -2411,49 +2074,25 @@ components:
               customproperty37: "NULL"
               customproperty38: "NULL"
               customproperty39: "NULL"
-              customproperty4: "NULL"
               customproperty40: "NULL"
-              customproperty41: "NULL"
-              customproperty42: "NULL"
-              customproperty43: "NULL"
-              customproperty44: "NULL"
-              customproperty45: "NULL"
-              customproperty46: "NULL"
-              customproperty47: "NULL"
-              customproperty48: "NULL"
-              customproperty49: "NULL"
-              customproperty5: "NULL"
-              customproperty50: "NULL"
-              customproperty51: "NULL"
-              customproperty52: "NULL"
-              customproperty53: "NULL"
-              customproperty54: "NULL"
-              customproperty55: "NULL"
-              customproperty56: "NULL"
-              customproperty57: "NULL"
-              customproperty58: "NULL"
-              customproperty59: "NULL"
-              customproperty6: "NULL"
-              customproperty60: "NULL"
-              customproperty61: "NULL"
-              customproperty62: "NULL"
-              customproperty63: "NULL"
-              customproperty64: "NULL"
-              customproperty65: "NULL"
-              customproperty7: "NULL"
-              customproperty8: "NULL"
-              customproperty9: "NULL"
               owners:
                 - "15553759289493"
             - entitlementID: 15553720929041
               entitlement_value: Support
-              entitlementTypeName: Group
               description: Group for support activity
               displayname: "Support Group"
               entitlement_glossary: "Group for support activity"
-              syscritical: "0"
-              soxcritical: "0"
+              status: "0"
+              entclass: "Group"
               customproperty1: "NULL"
+              customproperty2: "2023-05-24t06:34:23.000z"
+              customproperty3: "2023-05-24t06:34:23.000z"
+              customproperty4: "NULL"
+              customproperty5: "NULL"
+              customproperty6: "NULL"
+              customproperty7: "NULL"
+              customproperty8: "NULL"
+              customproperty9: "NULL"
               customproperty10: "NULL"
               customproperty11: "NULL"
               customproperty12: "NULL"
@@ -2464,7 +2103,6 @@ components:
               customproperty17: "NULL"
               customproperty18: "NULL"
               customproperty19: "NULL"
-              customproperty2: "2023-05-24t06:34:23.000z"
               customproperty20: "NULL"
               customproperty21: "NULL"
               customproperty22: "NULL"
@@ -2475,7 +2113,6 @@ components:
               customproperty27: "NULL"
               customproperty28: "NULL"
               customproperty29: "NULL"
-              customproperty3: "2023-05-24t06:34:23.000z"
               customproperty30: "NULL"
               customproperty31: "NULL"
               customproperty32: "NULL"
@@ -2486,38 +2123,7 @@ components:
               customproperty37: "NULL"
               customproperty38: "NULL"
               customproperty39: "NULL"
-              customproperty4: "NULL"
               customproperty40: "NULL"
-              customproperty41: "NULL"
-              customproperty42: "NULL"
-              customproperty43: "NULL"
-              customproperty44: "NULL"
-              customproperty45: "NULL"
-              customproperty46: "NULL"
-              customproperty47: "NULL"
-              customproperty48: "NULL"
-              customproperty49: "NULL"
-              customproperty5: "NULL"
-              customproperty50: "NULL"
-              customproperty51: "NULL"
-              customproperty52: "NULL"
-              customproperty53: "NULL"
-              customproperty54: "NULL"
-              customproperty55: "NULL"
-              customproperty56: "NULL"
-              customproperty57: "NULL"
-              customproperty58: "NULL"
-              customproperty59: "NULL"
-              customproperty6: "NULL"
-              customproperty60: "NULL"
-              customproperty61: "NULL"
-              customproperty62: "NULL"
-              customproperty63: "NULL"
-              customproperty64: "NULL"
-              customproperty65: "NULL"
-              customproperty7: "NULL"
-              customproperty8: "NULL"
-              customproperty9: "NULL"
               owners:
                 - "15553759289493"
     groupsmembership:
