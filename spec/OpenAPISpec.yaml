@@ -14,11 +14,11 @@ paths:
       summary: This API returns the list of users
       parameters:
         - in: query
-          name: offSet
+          name: offset
           schema:
             type: integer
         - in: query
-          name: pageSize
+          name: pagesize
           schema:
             type: integer
       requestBody:
@@ -52,11 +52,11 @@ paths:
       summary: This API returns the list of accounts
       parameters:
         - in: query
-          name: offSet
+          name: offset
           schema:
             type: integer
         - in: query
-          name: pageSize
+          name: pagesize
           schema:
             type: integer
       requestBody:
@@ -93,11 +93,11 @@ paths:
       summary: This API returns the list of group type entitlements
       parameters:
         - in: query
-          name: offSet
+          name: offset
           schema:
             type: integer
         - in: query
-          name: pageSize
+          name: pagesize
           schema:
             type: integer
       requestBody:
@@ -131,11 +131,11 @@ paths:
       summary: This API returns the list of role type entitlements
       parameters:
         - in: query
-          name: offSet
+          name: offset
           schema:
             type: integer
         - in: query
-          name: pageSize
+          name: pagesize
           schema:
             type: integer
       requestBody:
@@ -2142,10 +2142,22 @@ components:
                   entitlementID:
                     type: integer
               example:
-              - accountID: 15553759289493
+              - accountID: 15553759289491
+                entitlementID: 15553798176145
+              - accountID: 15553759289492
                 entitlementID: 15553798176145
               - accountID: 15553759289493
+                entitlementID: 15553798176145
+              - accountID: 15553759289491
                 entitlementID: 15553769734673
+              - accountID: 15553759289492
+                entitlementID: 15553769734673
+              - accountID: 15553759289493
+                entitlementID: 15553769734673
+              - accountID: 15553759289491
+                entitlementID: 15553720929041
+              - accountID: 15553759289492
+                entitlementID: 15553720929041
               - accountID: 15553759289493
                 entitlementID: 15553720929041            
     rolesmembership:
@@ -2166,9 +2178,21 @@ components:
               example:
               - accountID: 15553759289491
                 entitlementID: 15553692240529
+              - accountID: 15553759289492
+                entitlementID: 15553692240529
+              - accountID: 15553759289493
+                entitlementID: 15553692240529
               - accountID: 15553759289491
                 entitlementID: 15553670302865
               - accountID: 15553759289492
+                entitlementID: 1555367030286
+              - accountID: 15553759289493
+                entitlementID: 15553670302865
+              - accountID: 15553759289491
+                entitlementID: 15553692240529
+              - accountID: 15553759289492
+                entitlementID: 15553692240529
+              - accountID: 15553759289493
                 entitlementID: 15553692240529
     createaccount:
       type: object
