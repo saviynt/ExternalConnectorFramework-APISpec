@@ -2131,7 +2131,7 @@ components:
       properties:
           count:
             type: integer
-            example: 3     
+            example: 9     
           group_memberships:
               type: array
               items:
@@ -2165,7 +2165,7 @@ components:
       properties:
           count:
             type: integer
-            example: 3     
+            example: 9     
           role_memberships:
               type: array
               items:
