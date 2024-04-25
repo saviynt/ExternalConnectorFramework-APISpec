@@ -1,8 +1,7 @@
 openapi: 3.0.3
 info:
   title: Saviynt External Connector Framework API Specification
-  description: This page lists the API specification for Saviynt External Connector Framework. You can use "Try it out" option to explore the API specification.<p>
-    "Try it out" will require you to authorize with a static token, so you should first click on Authorize button at the top and provide a value, this is a sample specification and there is no actual token validation, so you can provide any string value for e.g. MyBearerToken and click on Authorize, then Close.
+  description: This page lists the API specification for Saviynt External Connector Framework. <p><b>You can use "Try it out" option to test the API. "Try it out" will require you to authorize with a static token, you should first click on Authorize button and provide a value, for this ECF specification there is no actual token validation, so you can provide any string value for e.g. MyBearerToken and click on Authorize, then Close.</b>
   version: "1.0"
 security:
         - bearerAuth: []  # Bearer Token Authentication
