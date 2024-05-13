@@ -1,13 +1,29 @@
 openapi: 3.0.3
 info:
   title: Saviynt External Connector Framework API Specification
-  description: This page lists the API specification for Saviynt External Connector Framework. <p><b>You can use "Try it out" option to test the API. "Try it out" will require you to authorize with a static token, you should first click on Authorize button and provide a value, for this ECF specification there is no actual token validation, so you can provide any string value for e.g. MyBearerToken and click on Authorize, then Close.</b>
+  description: This page lists the API specification for Saviynt External Connector Framework. You can use "Try it out" option to explore the API specification.
+    "Try it out" will require you to authorize with a static token, so you should first click on Authorize button at the top and provide a value, this is a sample specification and there is no actual token validation, so you can provide any string value for e.g. MyBearerToken and click on Authorize, then Close.
   version: "1.0"
+servers: 
+  - url: '{server}/api/{version}'
+    variables:
+      server:
+        default: https://example.com:443
+      version:
+        default: v1
 security:
-        - bearerAuth: []  # Bearer Token Authentication
+  - bearerAuth: []  # Bearer Token Authentication
+tags:
+  - name: User Import
+  - name: Account Import
+  - name: Access and Access Membership Import
+  - name: User Provisioning
+  - name: Account Provisioning
+  - name: Access Provisioning
 paths:
-  /api/v1/users:
+  /users:
     post:
+      operationId: post-users
       tags :
         - User Import
       summary: This API returns the list of users
@@ -44,11 +60,12 @@ paths:
                 $ref: '#/components/schemas/users'
         '400':
           description: Failure in fetching user list
-  /api/v1/accounts:
+  /accounts:
     post:
       tags :
         - Account Import
       summary: This API returns the list of accounts
+      operationId: post-accounts
       parameters:
         - in: query
           name: offset
@@ -85,8 +102,9 @@ paths:
                 $ref: '#/components/schemas/accounts'
         '400':
           description: Failure in fetching accounts list        
-  /api/v1/entitlements/groups:
+  /entitlements/groups:
     post:
+      operationId: post-entitlements-groups
       tags :
         - Access and Access Membership Import
       summary: This API returns the list of group type entitlements
@@ -123,8 +141,9 @@ paths:
                 $ref: '#/components/schemas/groups'
         '400':
           description: Failure in fetching entitlements list   
-  /api/v1/entitlements/roles:
+  /entitlements/roles:
     post:
+      operationId: post-entitlements-roles
       tags :
         - Access and Access Membership Import
       summary: This API returns the list of role type entitlements
@@ -161,8 +180,9 @@ paths:
                 $ref: '#/components/schemas/roles'
         '400':
           description: Failure in fetching entitlements list   
-  /api/v1/accounts/group_memberships:
+  /accounts/group_memberships:
     get:
+      operationId: get-accounts-group_memberships
       tags :
         - Access and Access Membership Import
       summary: This API returns the list of account entitlement association for entitlement type group
@@ -175,8 +195,9 @@ paths:
                 $ref: '#/components/schemas/groupsmembership'
         '400':
           description: Failure in fetching account group association
-  /api/v1/accounts/role_memberships:
+  /accounts/role_memberships:
     get:
+      operationId: get-accounts-role_memberships
       tags :
         - Access and Access Membership Import
       summary: This API returns the list of account entitlement association for entitlement type role
@@ -189,8 +210,9 @@ paths:
                 $ref: '#/components/schemas/rolesmembership'
         '400':
           description: Failure in fetching account role association
-  /api/v1/updateUser/{userName}:
+  /updateUser/{userName}:
     patch:
+      operationId: patch-updateUser
       tags :
         - User Provisioning
       summary: This API updates a user
@@ -221,8 +243,9 @@ paths:
                     example: "SUCCESS User Updated Successfully"
         '400':    # status code
           description: Failure in user update
-  /api/v1/createAccount:
+  /createAccount:
     post:
+      operationId: post-createAccount
       tags :
         - Account Provisioning
       summary: This API creates an account
@@ -247,46 +270,15 @@ paths:
                     example: "SUCCESS Account Created Successfully"
         '400':    # status code
           description: Failure in create account
-  /api/v1/updateAccount/{accountID1}:
+  /updateAccount/{accountID}:
     patch:
+      operationId: patchUpdateAccount
       tags :
         - Account Provisioning
       summary: This API updates an account
       parameters:
         - in: path
-          name: accountID1
-          schema:
-            type: string
-          required: true
-      requestBody:
-        content:
-          application/json:
-            schema:
-                $ref: '#/components/schemas/updateaccount'
-      responses:
-        '200':    # status code
-          description: Success Response
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  errorCode:
-                    type: string
-                    example: "0"
-                  message:
-                    type: string
-                    example: "SUCCESS Account Updated Successfully"
-        '400':    # status code
-          description: Failure in account update
-  /api/v1/updateAccount/{accountID2}:
-    patch:
-      tags :
-        - Account Provisioning
-      summary: This API enables an account
-      parameters:
-        - in: path
-          name: accountID2
+          name: accountID
           schema:
             type: string
           required: true
@@ -295,64 +287,48 @@ paths:
           application/json:
             schema:
               type: object
-              properties:
-                status:
-                  type: string
-                  example: "1"
+            examples:
+             Update Account:
+              value:
+                firstname: "Logan"
+                preferedFirstName: "Logan"
+                lastname: "Prasad"
+                middlename: "N"
+                email: "logan@example.net"
+                employeeType: "Regular"
+                jobcodedesc: "QA"
+                manager: "Joe"
+                statuskey: "1"
+                customproperty1: "customized value"
+             Enable Account:
+              value:
+                status: "1"
+             Disable Account:
+              value:
+                status: "0"
       responses:
         '200':    # status code
           description: Success Response
           content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  errorCode:
-                    type: string
-                    example: "0"
-                  message:
-                    type: string
-                    example: "SUCCESS Account Enabled Successfully"
+           application/json:
+            examples:
+              Update Account:
+                  value:
+                    errorCode: "0"
+                    message: "SUCCESS Account Updated Successfully"
+              Enable Account:
+                  value:
+                    errorCode: "0"
+                    message: "SUCCESS Account Enabled Successfully"
+              Disable Account:
+                  value:
+                    errorCode: "0"
+                    message: "SUCCESS Account Disabled Successfully"
         '400':    # status code
-          description: Failure in account enable
-  /api/v1/updateAccount/{accountID3}:        
-    patch:
-      tags :
-        - Account Provisioning
-      summary: This API disables an account
-      parameters:
-        - in: path
-          name: accountID3
-          schema:
-            type: string
-          required: true
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                status:
-                  type: string
-                  example: "0"
-      responses:
-        '200':    # status code
-          description: Success Response
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  errorCode:
-                    type: string
-                    example: "0"
-                  message:
-                    type: string
-                    example: "SUCCESS Account Disabled Successfully"
-        '400':    # status code
-          description: Failure in account disable            
-  /api/v1/removeAccount/{accountID}:
+          description: Failure response
+  /removeAccount/{accountID}:
     delete:
+      operationId: delete-removeAccount
       tags :
         - Account Provisioning
       summary: This API deletes an account
@@ -378,8 +354,9 @@ paths:
                     example: "SUCCESS Account Removed Successfully"
         '400':    # status code
           description: Failure in account deletion
-  /api/v1/changePassword:
+  /changePassword:
     put:
+      operationId: put_changePassword
       tags :
         - Account Provisioning
       summary: This API can be used to change password of an account
@@ -411,8 +388,9 @@ paths:
                     example: "SUCCESS Account Password Updated Successfully"
         '400':    # status code
           description: Failure in change password                 
-  /api/v1/entitlement/group/addAccess:        
+  /entitlement/group/addAccess:        
     put:
+      operationId: put_entitlementgroups
       tags :
         - Access Provisioning
       summary: This API grants group access to an account
@@ -444,7 +422,7 @@ paths:
                     example: "SUCCESS Group Access Granted Successfully"
         '400':    # status code
           description: Failure response                
-  /api/v1/entitlement/role/addAccess:        
+  /entitlement/role/addAccess:        
     put:
       tags :
         - Access Provisioning
@@ -477,7 +455,7 @@ paths:
                     example: "SUCCESS Role Access Granted Successfully"
         '400':    # status code
           description: Failure response
-  /api/v1/entitlement/group/removeAccess:        
+  /entitlement/group/removeAccess:        
     put:
       tags :
         - Access Provisioning
@@ -510,7 +488,7 @@ paths:
                     example: "SUCCESS Group Access Revoked Successfully"
         '400':    # status code
           description: Failure response                
-  /api/v1/entitlement/role/removeAccess:        
+  /entitlement/role/removeAccess:        
     put:
       tags :
         - Access Provisioning
@@ -2256,39 +2234,6 @@ components:
         manager:
           type: string
           example: "admin"
-        statuskey:
-          type: string
-          example: "1"
-        customproperty1:
-          type: string
-          example: "customized value"
-    updateaccount:
-      type: object
-      properties:
-        firstname:
-          type: string
-          example: "Logan"
-        preferedFirstName:
-          type: string
-          example: "Logan"
-        lastname:
-          type: string
-          example: "Prasad"
-        middlename:
-          type: string
-          example: "N"
-        email:
-          type: string
-          example: "logan@example.net"
-        employeeType:
-          type: string
-          example: "Regular"
-        jobcodedesc:
-          type: string
-          example: "QA"
-        manager:
-          type: string
-          example: "Joe"
         statuskey:
           type: string
           example: "1"
