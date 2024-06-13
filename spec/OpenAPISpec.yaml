@@ -65,6 +65,8 @@ paths:
       tags :
         - Account Import
       summary: This API returns the list of accounts
+      description: >
+        **Note**: The API response should map Account Status in target application to EIC Account Attribute CUSTOMPROPERTY11.
       operationId: post-accounts
       parameters:
         - in: query
